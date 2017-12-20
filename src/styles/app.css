@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 70%;
+  height: 900px;
+  line-height: 10px;
+}
+
+.puzzle {
+  width: 600px;
+  margin: 20%;
+}
+
+.right {
+  width: 30%;
+  overflow: auto;
+  height: 900px;
+  border-left: 1px solid #bababa;
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.reset-button {
+  width: 80%;
+  margin: 20px 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 32px;
+  color: darkgrey;
+  font-weight: 600;
+}
+
+.app__nav-bar {
+  width: 100%;
+  height: 100px;
+}
+
+.app__puzzle-list {
+  padding-left: 30px;
+}

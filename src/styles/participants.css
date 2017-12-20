@@ -1,0 +1,15 @@
+.participants {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 400px;
+  z-index: 5;
+  background-color: white;
+  border: 1px solid #bebebe;
+  box-shadow: 2px 2px 5px #bebebe;
+  padding: 20px 0;
+}
+
+.participants p {
+  margin: 10px 20px;
+}

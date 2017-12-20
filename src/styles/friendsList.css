@@ -1,0 +1,29 @@
+.friends-list {
+
+}
+
+.friend {
+  width: 95%;
+  margin: 5px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.friend_red {
+  background-color: #f7c2b7;
+}
+
+.friend_green {
+  background-color: #d9f7b8;
+}
+
+.friend_blue {
+  background-color: #b2dcf7;
+}
+
+.friend__text {
+  font-size: 24px;
+  line-height: 24px;
+}

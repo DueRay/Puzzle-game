@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test sockets</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+    <input type="file" id="file"/>
+    <button id="send">Send</button>
+    <a href="/picture">Picture</a>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/socket.io-stream.js"></script>
+    <script>
+        $(function () {
+            var socket = io();
+
+            $('#send').on('click', function(event) {
+                var file = document.getElementById('file').files[0];
+                var stream = ss.createStream();
+                console.log(file.clientHeight);
+                console.log(file.clientWidth);
+                ss(socket).emit('file', stream, {name: file.name});
+                ss.createBlobReadStream(file).pipe(stream);
+                $('#file').val('');
+            });
+
+            socket.on('some message', function(msg){
+                $('#messages').append($('<li>').text(msg));
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.available-room {
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  height: 280px;
+  border: 1px solid #bebebe;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #bebebe;
+}
+
+.available-room img {
+  width: 97%;
+  max-height: 218px;
+  margin: 5px;
+}
+
+.available-room p {
+  margin: 20px 30px;
+}
